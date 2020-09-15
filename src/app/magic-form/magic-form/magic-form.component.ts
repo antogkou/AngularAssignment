@@ -23,9 +23,7 @@ export class MagicFormComponent implements OnInit {
       jsversion: new FormControl(null, Validators.required),
     });
 
-    // this.form.get('firstName').valueChanges.subscribe(value => {
-    //   console.log(value);
-    // });
+    // this.form.get('firstName').valueChanges.subscribe(value => { console.log(value); }); <-- prints firstName value on every key press
 
     this.form.get('favouriteLanguage').valueChanges.subscribe(value => {
 
@@ -37,7 +35,7 @@ export class MagicFormComponent implements OnInit {
         jsVersionFormControl.clearValidators();
       }
       jsVersionFormControl.updateValueAndValidity();
-      //console.log(value);
+      //console.log(value); <-- prints JS value 
       
     });
     
