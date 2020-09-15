@@ -1,3 +1,4 @@
+1) Assignemnt 1
 # Create a feature in your Angular app that manages countries.
 
 Ideally, you should create a separate Angular module that will contain one component. The component will be responsible for displaying a list of countries with the following properties:
@@ -23,6 +24,15 @@ Region: Europe
 
 
 The backend URL that you are going to use is: https://restcountries.eu/rest/v2/ 
+
+2) Assignment 2 (Routing,Forms)
+● Apply the following requirements:
+○ The minimum length of first name to be 3
+○ Required fields are: First name, last name, angular preference, favourite
+language
+○ Display the message “field is required” for the required fields, and “the
+minimum length of field is 3 characters” for the first name
+● On submit button click, we should see on the console the values of the form
 
 # AngularCountriesExercise
 
