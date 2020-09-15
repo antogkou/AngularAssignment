@@ -5,6 +5,16 @@ import { AppComponent } from './app.component';
 import { CountriesModule } from './countries/countries.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MagicFormModule } from './magic-form/magic-form.module';
+import { RouterModule, Routes } from '@angular/router';
+import { CountriesListComponent } from './countries/countries-list/countries-list.component';
+import { MagicFormComponent } from './magic-form/magic-form/magic-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+const appRoutes: Routes = [
+  { path: 'countries-list', component: CountriesListComponent },
+  { path: 'magic-form', component: MagicFormComponent },
+];
 
 @NgModule({
   declarations: [
@@ -14,7 +24,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     CountriesModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    MagicFormModule,
+    RouterModule.forRoot(appRoutes),
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
